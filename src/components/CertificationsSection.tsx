@@ -67,7 +67,7 @@ export default function CertificationsSection() {
             viewport={{ once: true, amount: 0.1 }}
         >
             <FeaturedSection
-                title="VERIFIED.CREDENTIALS"
+                title="VERIFIED.CERTIFICATES"
                 subtitle="Industry-validated expertise across the security and engineering spectrum"
                 icon={<Award size={32} />}
             >

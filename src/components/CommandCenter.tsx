@@ -149,7 +149,7 @@ export default function CommandCenter({ onNavigate }: CommandCenterProps) {
                         >
                             <span className="font-mono text-[10px] opacity-50">03.</span>
                             <Award size={16} />
-                            <span className="font-bold tracking-widest text-[11px]">CREDENTIALS</span>
+                            <span className="font-bold tracking-widest text-[11px]">CREDLY</span>
                             <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
                         </motion.a>
                     </div>

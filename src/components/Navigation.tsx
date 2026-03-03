@@ -21,8 +21,8 @@ interface NavItem {
 const navLinks = [
     { id: "command-center", label: "Dashboard" },
     { id: "projects", label: "Projects" },
-    { id: "skills", label: "Ecosystem" },
-    { id: "certifications", label: "Credentials" },
+    { id: "skills", label: "Skills" },
+    { id: "certifications", label: "Certificates" },
     { id: "lab", label: "Lab" },
     { id: "contact", label: "Contact" },
 ];

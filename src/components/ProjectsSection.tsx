@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { projects, projectEcosystemSummary, type Project } from "@/data/projects";
+import { projects, projectSkillsSummary, type Project } from "@/data/projects";
 import {
     ExternalLink,
     Github,
@@ -106,7 +106,7 @@ function CaseFile({ project, featured = false }: { project: Project; featured?: 
                             </h3>
                             <p className="text-[11px] mt-1 font-bold opacity-60 tracking-wider flex items-center gap-1.5" style={{ color: "var(--text-secondary)" }}>
                                 <Sparkles size={10} style={{ color: project.color }} />
-                                {project.ecosystemRole.toUpperCase()}
+                                {project.skillsRole.toUpperCase()}
                             </p>
                         </div>
                     </div>

@@ -80,7 +80,7 @@ export default function SkillsSection() {
                             TECH<span className="text-[var(--primary-hex)]">.ECOSYSTEM</span>
                         </h2>
                         <p className="text-sm font-medium" style={{ color: "var(--text-secondary)" }}>
-                            Curated architectural stack - click nodes for deployment context
+                            Curated technology stack - click nodes for deployment context
                         </p>
                     </div>
                 </div>

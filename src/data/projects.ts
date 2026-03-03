@@ -14,7 +14,7 @@ export interface Project {
     githubUrl?: string;
     color: string;
     icon: string;
-    ecosystemRole: string;
+    skillsRole: string;
 }
 
 export const projects: Project[] = [
@@ -47,7 +47,7 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/mishu1507/ForensicLensV2",
         color: "#2F80ED",
         icon: "🔍",
-        ecosystemRole: "⭐ Flagship cybersecurity project - Investigation Systems",
+        skillsRole: "⭐ Flagship cybersecurity project - Investigation Systems",
     },
     {
         id: "mernverse-os",
@@ -75,7 +75,7 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/mishu1507",
         color: "#00B894",
         icon: "💻",
-        ecosystemRole: "⭐ Systems thinking showcase - Simulation",
+        skillsRole: "⭐ Systems thinking showcase - Simulation",
     },
     {
         id: "brainsparkz",
@@ -88,13 +88,13 @@ export const projects: Project[] = [
         systemDesign:
             "Designed a gamified learning engine with progressive difficulty scaling, real-time feedback loops, and cognitive challenge modules. The system explores how engagement and game mechanics can enhance technical learning outcomes.",
         architecture:
-            "Full-stack MERN application with RESTful API design. Frontend uses component-based architecture with state management for tracking user progress. Backend implements session management and progress analytics. Focuses on improving thinking ability, not just delivering content.",
-        tools: ["React", "Node.js", "MongoDB", "Express", "CSS"],
+            "Full-stack Flask application with SQLite database engine. Implements modular cognitive challenge logic and user progress analytics. Uses Python for backend processing and session management to ensure a structured learning experience.",
+        tools: ["HTML", "CSS", "SQLite", "Flask", "Python"],
         skills: [
-            "React",
+            "Full-Stack Development",
             "Backend Integration",
             "UX Design",
-            "Product Thinking",
+            "Database Management",
             "Gamification",
         ],
         whatILearned:
@@ -103,7 +103,7 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/mishu1507",
         color: "#FFD400",
         icon: "🧠",
-        ecosystemRole: "⭐ Human-centered technology project - Learning Engineering",
+        skillsRole: "⭐ Human-centered technology project - Learning Engineering",
     },
     {
         id: "screenshot-action-ai",
@@ -130,7 +130,7 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/mishu1507",
         color: "#FF5C8A",
         icon: "📸",
-        ecosystemRole: "⭐ Experimental future-facing project - Automation",
+        skillsRole: "⭐ Experimental future-facing project - Automation",
     },
     {
         id: "zip-unzip",
@@ -156,7 +156,7 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/mishu1507",
         color: "#AAAAAA",
         icon: "📦",
-        ecosystemRole: "Supporting engineering fundamentals - Utilities",
+        skillsRole: "Supporting engineering fundamentals - Utilities",
     },
     {
         id: "help-you-study",
@@ -182,7 +182,7 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/mishu1507",
         color: "#00B894",
         icon: "📚",
-        ecosystemRole: "Learning systems experimentation - Productivity",
+        skillsRole: "Learning systems experimentation - Productivity",
     },
 
     // ═══════════════════════════════════════════
@@ -212,7 +212,7 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/mishu1507",
         color: "#2F80ED",
         icon: "🎯",
-        ecosystemRole: "Investigation → Visualization evolution - Visualization",
+        skillsRole: "Investigation → Visualization evolution - Visualization",
     },
     {
         id: "auto-soc-lite",
@@ -238,7 +238,7 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/mishu1507",
         color: "#FFD400",
         icon: "🖥️",
-        ecosystemRole: "Educational SOC simulation - Simulation",
+        skillsRole: "Educational SOC simulation - Simulation",
     },
     {
         id: "prompt-shield",
@@ -264,7 +264,7 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/mishu1507",
         color: "#FF5C8A",
         icon: "🤖",
-        ecosystemRole: "AI Security research - AI Security",
+        skillsRole: "AI Security research - AI Security",
     },
     {
         id: "system-mapper",
@@ -290,7 +290,7 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/mishu1507",
         color: "#2F80ED",
         icon: "🧩",
-        ecosystemRole: "Architecture visualization - Visualization",
+        skillsRole: "Architecture visualization - Visualization",
     },
     {
         id: "log-mind",
@@ -316,11 +316,11 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/mishu1507",
         color: "#FFD400",
         icon: "🔎",
-        ecosystemRole: "AI-assisted investigation - Investigation Systems",
+        skillsRole: "AI-assisted investigation - Investigation Systems",
     },
 ];
 
-export const projectEcosystemSummary =
+export const projectSkillsSummary =
     "My projects explore how complex digital systems can be analyzed, simulated, or simplified through cybersecurity investigation frameworks, learning platforms, and automation-driven tools.";
 
 export const projectPattern = {

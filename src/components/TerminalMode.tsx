@@ -17,7 +17,7 @@ interface TerminalModeProps {
     onClose: () => void;
 }
 
-const QUICK_COMMANDS = ["whoami", "projects", "skills", "certifications", "contact", "help"];
+const QUICK_COMMANDS = ["whoami", "projects", "skills", "certifications", "github", "contact", "help"];
 
 export default function TerminalMode({ isOpen, onClose }: TerminalModeProps) {
     const [lines, setLines] = useState<TerminalLine[]>([
@@ -92,18 +92,7 @@ export default function TerminalMode({ isOpen, onClose }: TerminalModeProps) {
             if (command === "help") {
                 newLines.push({
                     type: "output",
-                    content: `+-- AVAILABLE COMMANDS ----------------------------------------+
-|                                                              |
-| whoami          - Display identity information               |
-| projects        - List all projects with IDs                 |
-| view <id>       - View deep specs of a project               |
-| skills          - Display full technology ecosystem          |
-| certifications  - List verified credentials                  |
-| github          - Open GitHub profile                        |
-| contact         - Display contact information                |
-| help            - Show this help message                     |
-| clear           - Clear terminal                             |
-+--------------------------------------------------------------+`,
+                    content: terminalCommands.help.output,
                 });
             } else if (command === "skills") {
                 let output = "+-- TECHNOLOGY ECOSYSTEM --------------------------------------+\n";

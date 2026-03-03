@@ -46,8 +46,8 @@ export const projects: Project[] = [
         liveUrl: "https://forensiclens.vercel.app/",
         githubUrl: "https://github.com/mishu1507/ForensicLensV2",
         color: "#2F80ED",
-        icon: "🔍",
-        skillsRole: "⭐ Flagship cybersecurity project - Investigation Systems",
+        icon: "search",
+        skillsRole: "Flagship cybersecurity project - Investigation Systems",
     },
     {
         id: "mernverse-os",
@@ -74,8 +74,8 @@ export const projects: Project[] = [
         liveUrl: "https://mernverseos.vercel.app/",
         githubUrl: "https://github.com/mishu1507",
         color: "#00B894",
-        icon: "💻",
-        skillsRole: "⭐ Systems thinking showcase - Simulation",
+        icon: "monitor",
+        skillsRole: "Systems thinking showcase - Simulation",
     },
     {
         id: "brainsparkz",
@@ -102,8 +102,8 @@ export const projects: Project[] = [
         liveUrl: "https://brainsparkz.onrender.com/",
         githubUrl: "https://github.com/mishu1507",
         color: "#FFD400",
-        icon: "🧠",
-        skillsRole: "⭐ Human-centered technology project - Learning Engineering",
+        icon: "brain",
+        skillsRole: "Human-centered technology project - Learning Engineering",
     },
     {
         id: "screenshot-action-ai",
@@ -129,8 +129,8 @@ export const projects: Project[] = [
             "Explored how visual inputs can be transformed into executable workflows, reducing manual interaction. Learned about intent-driven computing and how AI can bridge the gap between what a user sees and what they need to do.",
         githubUrl: "https://github.com/mishu1507",
         color: "#FF5C8A",
-        icon: "📸",
-        skillsRole: "⭐ Experimental future-facing project - Automation",
+        icon: "camera",
+        skillsRole: "Experimental future-facing project - Automation",
     },
     {
         id: "zip-unzip",
@@ -155,7 +155,7 @@ export const projects: Project[] = [
             "Understood how compression algorithms work at a fundamental level. Gained experience in byte-level file manipulation, command-line workflows, and system utility development.",
         githubUrl: "https://github.com/mishu1507",
         color: "#AAAAAA",
-        icon: "📦",
+        icon: "package",
         skillsRole: "Supporting engineering fundamentals - Utilities",
     },
     {
@@ -181,7 +181,7 @@ export const projects: Project[] = [
             "Learned about user workflow analysis and how to design tools that enhance productivity. Gained experience in local-first application architecture and productivity engineering.",
         githubUrl: "https://github.com/mishu1507",
         color: "#00B894",
-        icon: "📚",
+        icon: "bookOpen",
         skillsRole: "Learning systems experimentation - Productivity",
     },
 
@@ -211,7 +211,7 @@ export const projects: Project[] = [
             "Natural evolution of ForensicLens - moving from investigation to visualization of investigation. Exploring how attack storytelling creates deeper understanding than alert dashboards.",
         githubUrl: "https://github.com/mishu1507",
         color: "#2F80ED",
-        icon: "🎯",
+        icon: "target",
         skillsRole: "Investigation → Visualization evolution - Visualization",
     },
     {
@@ -237,7 +237,7 @@ export const projects: Project[] = [
             "Exploring educational SOC simulation as a bridge between academic learning and industry-ready skills. Directly informed by Quick Heal Academy training experience.",
         githubUrl: "https://github.com/mishu1507",
         color: "#FFD400",
-        icon: "🖥️",
+        icon: "terminal",
         skillsRole: "Educational SOC simulation - Simulation",
     },
     {
@@ -263,7 +263,7 @@ export const projects: Project[] = [
             "Exploring the intersection of AI and cybersecurity - a modern security direction that combines investigation mindset with emerging AI threat landscape.",
         githubUrl: "https://github.com/mishu1507",
         color: "#FF5C8A",
-        icon: "🤖",
+        icon: "bot",
         skillsRole: "AI Security research - AI Security",
     },
     {
@@ -289,7 +289,7 @@ export const projects: Project[] = [
             "Exploring how systems can be explained automatically through code analysis and intelligent visualization.",
         githubUrl: "https://github.com/mishu1507",
         color: "#2F80ED",
-        icon: "🧩",
+        icon: "puzzle",
         skillsRole: "Architecture visualization - Visualization",
     },
     {
@@ -315,7 +315,7 @@ export const projects: Project[] = [
             "Exploring how AI can make security analysis more accessible by translating technical log data into understandable narratives.",
         githubUrl: "https://github.com/mishu1507",
         color: "#FFD400",
-        icon: "🔎",
+        icon: "fileSearch",
         skillsRole: "AI-assisted investigation - Investigation Systems",
     },
 ];

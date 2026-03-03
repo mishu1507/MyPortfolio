@@ -17,7 +17,7 @@ export const skillCategories: SkillCategory[] = [
     {
         id: "investigation",
         title: "Investigation",
-        icon: "🔍",
+        icon: "search",
         color: "#2F80ED",
         description: "Security analysis, forensics, and threat detection",
         skills: [
@@ -38,7 +38,7 @@ export const skillCategories: SkillCategory[] = [
     {
         id: "automation",
         title: "Automation",
-        icon: "⚡",
+        icon: "zap",
         color: "#FFD400",
         description: "Scripting and task optimization",
         skills: [
@@ -53,7 +53,7 @@ export const skillCategories: SkillCategory[] = [
     {
         id: "engineering",
         title: "Engineering",
-        icon: "🔧",
+        icon: "wrench",
         color: "#FF5C8A",
         description: "Software development and architecture",
         skills: [
@@ -72,7 +72,7 @@ export const skillCategories: SkillCategory[] = [
     {
         id: "cloud",
         title: "Cloud",
-        icon: "☁️",
+        icon: "cloud",
         color: "#00B894",
         description: "Infrastructure and cloud security",
         skills: [
@@ -88,7 +88,7 @@ export const skillCategories: SkillCategory[] = [
     {
         id: "systems-thinking",
         title: "Systems Thinking",
-        icon: "🧩",
+        icon: "puzzle",
         color: "#A855F7",
         description: "High-level design and modeling",
         skills: [
@@ -99,4 +99,5 @@ export const skillCategories: SkillCategory[] = [
             { name: "Learning System Design", context: "Engineering educational tools through cognitive modeling.", proficiency: "proficient" },
         ],
     },
+
 ];

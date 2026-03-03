@@ -157,9 +157,10 @@ export default function LabSection() {
                                     backgroundColor: "var(--surface-hex)",
                                     border: `2px solid var(--blue-hex)`,
                                     boxShadow: "2px 2px 0px var(--shadow-color)",
+                                    color: pillar.color
                                 }}
                             >
-                                🧠
+                                {pillar.icon}
                             </div>
                             <div>
                                 <h3

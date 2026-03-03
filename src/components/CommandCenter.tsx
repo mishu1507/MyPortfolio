@@ -15,9 +15,8 @@ import {
     FlaskConical,
 } from "lucide-react";
 
-interface CommandCenterProps {
-    onNavigate: (section: string) => void;
-}
+import ShowMoreButton from "./ui/ShowMoreButton";
+import DynamicIcon from "./ui/DynamicIcon";
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -35,6 +34,10 @@ const itemVariants = {
         transition: { duration: 0.5, ease: "easeOut" },
     },
 };
+
+interface CommandCenterProps {
+    onNavigate: (section: string) => void;
+}
 
 export default function CommandCenter({ onNavigate }: CommandCenterProps) {
     const deployedProjects = projects.filter((p) => p.status === "deployed");
@@ -357,7 +360,9 @@ export default function CommandCenter({ onNavigate }: CommandCenterProps) {
                                 />
 
                                 <div className="flex items-start gap-3">
-                                    <span className="text-2xl">{project.icon}</span>
+                                    <div className="p-2 rounded-lg bg-[var(--background-hex)] border border-[var(--border-hex)]" style={{ color: project.color }}>
+                                        <DynamicIcon name={project.icon} size={24} />
+                                    </div>
                                     <div className="min-w-0">
                                         <h3 className="font-bold text-sm" style={{ color: "var(--text-primary)" }}>
                                             {project.title}

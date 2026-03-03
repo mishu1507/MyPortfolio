@@ -13,6 +13,7 @@ import {
 import ShowMoreButton from "./ui/ShowMoreButton";
 import FeaturedSection from "./ui/FeaturedSection";
 import ExpandableGrid from "./ui/ExpandableGrid";
+import DynamicIcon from "./ui/DynamicIcon";
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -132,8 +133,8 @@ export default function CertificationsSection() {
                                     }}
                                 >
                                     <div className="flex justify-between items-start mb-4">
-                                        <div className="text-3xl grayscale group-hover:grayscale-0 transition-all duration-300">
-                                            {cert.icon}
+                                        <div className="grayscale group-hover:grayscale-0 transition-all duration-300" style={{ color: categoryColors[cert.category] }}>
+                                            <DynamicIcon name={cert.icon} size={32} />
                                         </div>
                                         <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-[var(--background-hex)] border border-[var(--border-hex)] text-[var(--text-muted)]">
                                             ID: {cert.id.split('-').pop()?.toUpperCase()}
@@ -193,8 +194,8 @@ export default function CertificationsSection() {
                                             }
                                         }}
                                     >
-                                        <div className="text-xl shrink-0 p-2 rounded-lg bg-[var(--background-hex)] border border-[var(--border-hex)] group-hover:scale-110 transition-transform">
-                                            {cert.icon}
+                                        <div className="shrink-0 p-2 rounded-lg bg-[var(--background-hex)] border border-[var(--border-hex)] group-hover:scale-110 transition-transform" style={{ color: categoryColors[cert.category] }}>
+                                            <DynamicIcon name={cert.icon} size={20} />
                                         </div>
                                         <div className="min-w-0 flex-1">
                                             <h4 className="font-bold text-xs truncate" style={{ color: "var(--text-primary)" }}>
@@ -220,7 +221,7 @@ export default function CertificationsSection() {
                         <ShowMoreButton
                             onClick={() => setIsExpanded(!isExpanded)}
                             isExpanded={isExpanded}
-                            labelShow="View All Certifications →"
+                            labelShow="View All Certifications"
                             labelHide="Hide Archive"
                         />
                     </motion.div>

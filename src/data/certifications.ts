@@ -18,7 +18,7 @@ export const certifications: Certification[] = [
         category: "cybersecurity",
         skills: ["SIEM", "QRadar", "Log Analysis", "Threat Detection"],
         fileName: "ibm qradar siem foundation.pdf",
-        icon: "🛡️",
+        icon: "shield",
     },
     {
         id: "ibm-incident-response",
@@ -27,7 +27,7 @@ export const certifications: Certification[] = [
         category: "cybersecurity",
         skills: ["Incident Response", "Threat Analysis", "Security Operations"],
         fileName: "ibm incident response.pdf",
-        icon: "🚨",
+        icon: "alertTriangle",
     },
     {
         id: "cisco-network-defense",
@@ -36,7 +36,7 @@ export const certifications: Certification[] = [
         category: "cybersecurity",
         skills: ["Network Security", "Defense Strategies", "Firewall Management"],
         fileName: "cisco network defense.pdf",
-        icon: "🔒",
+        icon: "lock",
     },
     {
         id: "network-defense-update",
@@ -45,7 +45,7 @@ export const certifications: Certification[] = [
         category: "cybersecurity",
         skills: ["Advanced Network Defense", "Intrusion Detection", "Security Monitoring"],
         fileName: "NetworkDefenseUpdate.pdf",
-        icon: "🌐",
+        icon: "globe",
     },
     {
         id: "cybersecurity-gen-ai",
@@ -54,7 +54,7 @@ export const certifications: Certification[] = [
         category: "cybersecurity",
         skills: ["Generative AI", "AI Security", "Threat Intelligence"],
         fileName: "Level Up Cybersecurity with Generative AI.jpg",
-        icon: "🤖",
+        icon: "bot",
     },
     {
         id: "cpps",
@@ -63,7 +63,7 @@ export const certifications: Certification[] = [
         category: "cybersecurity",
         skills: ["Penetration Testing", "Vulnerability Assessment", "Ethical Hacking"],
         fileName: "CPPS.pdf",
-        icon: "⚔️",
+        icon: "shieldAlert",
     },
 
     // Cloud
@@ -74,7 +74,7 @@ export const certifications: Certification[] = [
         category: "cloud",
         skills: ["AWS", "Cloud Computing", "Cloud Architecture"],
         fileName: "AWS Cloud Practitioner.pdf",
-        icon: "☁️",
+        icon: "cloud",
     },
     {
         id: "aws-security-best-practices",
@@ -83,7 +83,7 @@ export const certifications: Certification[] = [
         category: "cloud",
         skills: ["AWS Security", "IAM", "VPC", "WAF"],
         fileName: "AWS Security Best Practices.pdf",
-        icon: "🔐",
+        icon: "shieldCheck",
     },
     {
         id: "aws-security-fundamentals",
@@ -92,7 +92,7 @@ export const certifications: Certification[] = [
         category: "cloud",
         skills: ["Cloud Security", "AWS Fundamentals", "Security Services"],
         fileName: "AWS Security Fundamentals Second Edition.pdf",
-        icon: "🏗️",
+        icon: "construction",
     },
     {
         id: "aws-security-observability",
@@ -101,7 +101,7 @@ export const certifications: Certification[] = [
         category: "cloud",
         skills: ["Observability", "Monitoring", "Security Analytics"],
         fileName: "Security and Observability AWS.pdf",
-        icon: "📊",
+        icon: "barChart",
     },
     {
         id: "google-cloud-network",
@@ -110,7 +110,7 @@ export const certifications: Certification[] = [
         category: "cloud",
         skills: ["Google Cloud", "Cloud Networking", "VPC"],
         fileName: "develop-your-google-cloud-network-skill-badge.png",
-        icon: "🌍",
+        icon: "globe",
     },
     {
         id: "data-engineering-aws",
@@ -119,7 +119,7 @@ export const certifications: Certification[] = [
         category: "cloud",
         skills: ["Data Engineering", "ETL", "AWS Data Services"],
         fileName: "DATA engineering.pdf",
-        icon: "📡",
+        icon: "radio",
     },
 
     // AI & Data
@@ -130,7 +130,7 @@ export const certifications: Certification[] = [
         category: "ai-data",
         skills: ["AI Engineering", "Machine Learning", "Model Deployment"],
         fileName: "AI Engineer-Certificate.pdf",
-        icon: "🧪",
+        icon: "flaskConical",
     },
     {
         id: "ai-data-scientist",
@@ -139,7 +139,7 @@ export const certifications: Certification[] = [
         category: "ai-data",
         skills: ["Data Science", "AI", "Statistical Analysis"],
         fileName: "AI and Data Scientist-Certificate.pdf",
-        icon: "📈",
+        icon: "trendingUp",
     },
     {
         id: "data-analyst",
@@ -148,7 +148,7 @@ export const certifications: Certification[] = [
         category: "ai-data",
         skills: ["Data Analysis", "Visualization", "Statistical Methods"],
         fileName: "Data Analyst-Certificate.pdf",
-        icon: "📉",
+        icon: "trendingDown",
     },
     {
         id: "tata-data-viz",
@@ -157,7 +157,7 @@ export const certifications: Certification[] = [
         category: "ai-data",
         skills: ["Data Visualization", "Business Intelligence", "Analytics"],
         fileName: "tata data visualisation.pdf",
-        icon: "📊",
+        icon: "barChart",
     },
     {
         id: "ibm-design",
@@ -166,7 +166,7 @@ export const certifications: Certification[] = [
         category: "ai-data",
         skills: ["Design Thinking", "User Research", "Problem Solving"],
         fileName: "IBMDesign20260118-32-mvthny.pdf",
-        icon: "💡",
+        icon: "lightbulb",
     },
 
     // Development
@@ -177,7 +177,7 @@ export const certifications: Certification[] = [
         category: "development",
         skills: ["HTML", "CSS", "JavaScript", "React"],
         fileName: "Frontend Development-Certificate.pdf",
-        icon: "🎨",
+        icon: "palette",
     },
     {
         id: "lets-bootstrap",
@@ -186,7 +186,7 @@ export const certifications: Certification[] = [
         category: "development",
         skills: ["Bootstrap", "Responsive Design", "CSS Frameworks"],
         fileName: "lets bootstrap.pdf",
-        icon: "📱",
+        icon: "smartphone",
     },
     {
         id: "lets-java",
@@ -195,7 +195,7 @@ export const certifications: Certification[] = [
         category: "development",
         skills: ["Java", "OOP", "Data Structures"],
         fileName: "lets java.pdf",
-        icon: "☕",
+        icon: "coffee",
     },
     {
         id: "mongodb-cert",
@@ -204,7 +204,7 @@ export const certifications: Certification[] = [
         category: "development",
         skills: ["MongoDB", "NoSQL", "Database Design"],
         fileName: "LUEMDBMAY1251035.pdf",
-        icon: "🗄️",
+        icon: "database",
     },
     {
         id: "lets-gemini",
@@ -213,7 +213,7 @@ export const certifications: Certification[] = [
         category: "development",
         skills: ["Gemini AI", "API Integration", "AI Applications"],
         fileName: "lets gemini.pdf",
-        icon: "✨",
+        icon: "sparkles",
     },
 
     // Industry Training - Quick Heal Academy
@@ -224,7 +224,7 @@ export const certifications: Certification[] = [
         category: "industry-training",
         skills: ["Incident Response", "Threat Handling", "SOC Operations"],
         fileName: "quickheal/certificate (1).pdf",
-        icon: "🏥",
+        icon: "activity",
     },
     {
         id: "qh-digital-forensics",
@@ -233,7 +233,7 @@ export const certifications: Certification[] = [
         category: "industry-training",
         skills: ["Digital Forensics", "Evidence Collection", "Chain of Custody"],
         fileName: "quickheal/certificate DF.pdf",
-        icon: "🔬",
+        icon: "microscope",
     },
     {
         id: "qh-mcis",
@@ -242,7 +242,7 @@ export const certifications: Certification[] = [
         category: "industry-training",
         skills: ["Malware Analysis", "Cyber Intelligence", "Threat Research"],
         fileName: "quickheal/certificate MCIS .pdf",
-        icon: "🦠",
+        icon: "bug",
     },
     {
         id: "qh-network-security",
@@ -251,7 +251,7 @@ export const certifications: Certification[] = [
         category: "industry-training",
         skills: ["Network Security", "Application Security", "Security Architecture"],
         fileName: "quickheal/certificate NAS.pdf",
-        icon: "🛡️",
+        icon: "shield",
     },
     {
         id: "qh-ssas",
@@ -260,7 +260,7 @@ export const certifications: Certification[] = [
         category: "industry-training",
         skills: ["System Security", "Security Administration", "Hardening"],
         fileName: "quickheal/certificate ssas.pdf",
-        icon: "⚙️",
+        icon: "settings",
     },
     {
         id: "qh-vapt",
@@ -269,7 +269,7 @@ export const certifications: Certification[] = [
         category: "industry-training",
         skills: ["VAPT", "Vulnerability Assessment", "Penetration Testing"],
         fileName: "quickheal/certificate vapt.pdf",
-        icon: "🎯",
+        icon: "target",
     },
     {
         id: "qh-general",
@@ -278,7 +278,7 @@ export const certifications: Certification[] = [
         category: "industry-training",
         skills: ["Cybersecurity", "Professional Development", "Industry Skills"],
         fileName: "quickheal/certificate.pdf",
-        icon: "🏆",
+        icon: "trophy",
     },
 ];
 
@@ -299,9 +299,9 @@ export const categoryColors: Record<Certification["category"], string> = {
 };
 
 export const categoryIcons: Record<Certification["category"], string> = {
-    cybersecurity: "🛡️",
-    cloud: "☁️",
-    "ai-data": "🧪",
-    development: "💻",
-    "industry-training": "🏭",
+    cybersecurity: "shield",
+    cloud: "cloud",
+    "ai-data": "flaskConical",
+    development: "monitor",
+    "industry-training": "factory",
 };

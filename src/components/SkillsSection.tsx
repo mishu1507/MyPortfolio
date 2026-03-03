@@ -29,6 +29,7 @@ const proficiencyLabel: Record<Skill["proficiency"], { label: string; color: str
     familiar: { label: "Familiar", color: "#FFD400" },
 };
 
+import DynamicIcon from "./ui/DynamicIcon";
 import { useRef, useEffect } from "react";
 
 export default function SkillsSection() {
@@ -101,7 +102,9 @@ export default function SkillsSection() {
                     >
                         {/* Category Label */}
                         <div className="flex items-center gap-3 mb-6">
-                            <span className="text-2xl">{category.icon}</span>
+                            <span className="p-2 rounded-lg bg-[var(--background-hex)] border border-[var(--border-hex)]" style={{ color: category.color }}>
+                                <DynamicIcon name={category.icon} size={24} />
+                            </span>
                             <h3 className="font-bold tracking-tight text-lg" style={{ color: "var(--text-primary)" }}>
                                 {category.title}
                             </h3>
@@ -221,7 +224,7 @@ export default function SkillsSection() {
                                                     key={p.id}
                                                     className="flex items-center gap-1.5 px-2 py-1 rounded bg-[var(--background-hex)] border border-[var(--border-hex)]"
                                                 >
-                                                    <span className="text-xs">{p.icon}</span>
+                                                    <DynamicIcon name={p.icon} size={12} style={{ color: p.color }} />
                                                     <span className="text-[10px] font-bold" style={{ color: "var(--text-primary)" }}>{p.title}</span>
                                                 </div>
                                             ))

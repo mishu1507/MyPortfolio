@@ -20,6 +20,7 @@ import {
 import ShowMoreButton from "./ui/ShowMoreButton";
 import FeaturedSection from "./ui/FeaturedSection";
 import ExpandableGrid from "./ui/ExpandableGrid";
+import DynamicIcon from "./ui/DynamicIcon";
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -82,7 +83,7 @@ function CaseFile({ project, featured = false }: { project: Project; featured?: 
                             }}
                             whileHover={{ scale: 1.1, rotate: 5 }}
                         >
-                            {project.icon}
+                            <DynamicIcon name={project.icon} size={featured ? 32 : 24} />
                         </motion.div>
                         <div>
                             <div className="flex items-center gap-2 mb-2 flex-wrap">
@@ -333,7 +334,7 @@ export default function ProjectsSection() {
                     <ShowMoreButton
                         onClick={() => setIsExpanded(!isExpanded)}
                         isExpanded={isExpanded}
-                        labelShow="Show More Projects →"
+                        labelShow="Show More Projects"
                         labelHide="Show Less Archive"
                     />
                 </motion.div>

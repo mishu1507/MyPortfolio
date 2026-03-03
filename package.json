@@ -1,5 +1,5 @@
 {
-<<<<<<< HEAD
+
   "name": "aditi-portfolio",
   "version": "1.0.0",
   "private": true,
@@ -36,7 +36,7 @@
     "typescript": "^5.7.2",
     "gh-pages": "^6.1.1"
   }
-=======
+
     "name": "aditi-portfolio",
     "version": "1.0.0",
     "private": true,
@@ -67,5 +67,5 @@
         "tailwindcss": "^3.4.16",
         "typescript": "^5.7.2"
     }
->>>>>>> 8d4a93b (update)
+
 }

@@ -97,11 +97,6 @@ function CaseFile({ project, featured = false }: { project: Project; featured?: 
                                     {project.codename}
                                 </span>
                                 <StatusBadge status={project.status} />
-                                {project.classification === "flagship" && (
-                                    <span className="text-[10px] font-mono px-2 py-0.5 rounded font-bold bg-[var(--accent-hex)] text-black border border-black shadow-[2px_2px_0px_black]">
-                                        ★ FLAGSHIP
-                                    </span>
-                                )}
                             </div>
                             <h3
                                 className={`${featured ? 'text-2xl md:text-3xl' : 'text-xl'} font-black tracking-tighter`}
@@ -320,11 +315,16 @@ export default function ProjectsSection() {
                                 </span>
                                 <span className="h-px flex-1 bg-[var(--border-hex)]" />
                             </div>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <motion.div
+                                className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start"
+                                variants={containerVariants}
+                                initial="hidden"
+                                animate="visible"
+                            >
                                 {otherProjects.map((project) => (
                                     <CaseFile key={project.id} project={project} />
                                 ))}
-                            </div>
+                            </motion.div>
                         </div>
                     )}
                 </ExpandableGrid>

@@ -43,7 +43,7 @@ export const projects: Project[] = [
         ],
         whatILearned:
             "Deepened my understanding of forensic investigation methodology and how to translate manual investigation processes into automated workflows. Learned the importance of data normalization in multi-source log analysis and how behavioral correlation can reveal attack patterns invisible in isolated log entries.",
-        liveUrl: "https://forensic-lens-v2.vercel.app/",
+        liveUrl: "https://forensiclens.vercel.app/",
         githubUrl: "https://github.com/mishu1507/ForensicLensV2",
         color: "#2F80ED",
         icon: "🔍",
@@ -72,6 +72,7 @@ export const projects: Project[] = [
         whatILearned:
             "Gained deep understanding of operating system concepts by simulating them in the browser. Learned about state machine design patterns, complex UI state management, and how systems visualization can make abstract concepts tangible and interactive.",
         liveUrl: "https://mernverseos.vercel.app/",
+        githubUrl: "https://github.com/mishu1507",
         color: "#00B894",
         icon: "💻",
         ecosystemRole: "⭐ Systems thinking showcase - Simulation",
@@ -99,6 +100,7 @@ export const projects: Project[] = [
         whatILearned:
             "Learned how to design systems that balance engagement with educational value. Understood the psychology behind gamification mechanics and cognitive learning engineering. Gained experience in full-stack deployment and building human-centered technology.",
         liveUrl: "https://brainsparkz.onrender.com/",
+        githubUrl: "https://github.com/mishu1507",
         color: "#FFD400",
         icon: "🧠",
         ecosystemRole: "⭐ Human-centered technology project - Learning Engineering",
@@ -125,6 +127,7 @@ export const projects: Project[] = [
         ],
         whatILearned:
             "Explored how visual inputs can be transformed into executable workflows, reducing manual interaction. Learned about intent-driven computing and how AI can bridge the gap between what a user sees and what they need to do.",
+        githubUrl: "https://github.com/mishu1507",
         color: "#FF5C8A",
         icon: "📸",
         ecosystemRole: "⭐ Experimental future-facing project - Automation",
@@ -150,6 +153,7 @@ export const projects: Project[] = [
         ],
         whatILearned:
             "Understood how compression algorithms work at a fundamental level. Gained experience in byte-level file manipulation, command-line workflows, and system utility development.",
+        githubUrl: "https://github.com/mishu1507",
         color: "#AAAAAA",
         icon: "📦",
         ecosystemRole: "Supporting engineering fundamentals - Utilities",
@@ -175,6 +179,7 @@ export const projects: Project[] = [
         ],
         whatILearned:
             "Learned about user workflow analysis and how to design tools that enhance productivity. Gained experience in local-first application architecture and productivity engineering.",
+        githubUrl: "https://github.com/mishu1507",
         color: "#00B894",
         icon: "📚",
         ecosystemRole: "Learning systems experimentation - Productivity",
@@ -204,6 +209,7 @@ export const projects: Project[] = [
         ],
         whatILearned:
             "Natural evolution of ForensicLens - moving from investigation to visualization of investigation. Exploring how attack storytelling creates deeper understanding than alert dashboards.",
+        githubUrl: "https://github.com/mishu1507",
         color: "#2F80ED",
         icon: "🎯",
         ecosystemRole: "Investigation → Visualization evolution - Visualization",
@@ -229,6 +235,7 @@ export const projects: Project[] = [
         ],
         whatILearned:
             "Exploring educational SOC simulation as a bridge between academic learning and industry-ready skills. Directly informed by Quick Heal Academy training experience.",
+        githubUrl: "https://github.com/mishu1507",
         color: "#FFD400",
         icon: "🖥️",
         ecosystemRole: "Educational SOC simulation - Simulation",
@@ -254,6 +261,7 @@ export const projects: Project[] = [
         ],
         whatILearned:
             "Exploring the intersection of AI and cybersecurity - a modern security direction that combines investigation mindset with emerging AI threat landscape.",
+        githubUrl: "https://github.com/mishu1507",
         color: "#FF5C8A",
         icon: "🤖",
         ecosystemRole: "AI Security research - AI Security",
@@ -279,6 +287,7 @@ export const projects: Project[] = [
         ],
         whatILearned:
             "Exploring how systems can be explained automatically through code analysis and intelligent visualization.",
+        githubUrl: "https://github.com/mishu1507",
         color: "#2F80ED",
         icon: "🧩",
         ecosystemRole: "Architecture visualization - Visualization",
@@ -304,6 +313,7 @@ export const projects: Project[] = [
         ],
         whatILearned:
             "Exploring how AI can make security analysis more accessible by translating technical log data into understandable narratives.",
+        githubUrl: "https://github.com/mishu1507",
         color: "#FFD400",
         icon: "🔎",
         ecosystemRole: "AI-assisted investigation - Investigation Systems",

@@ -3,6 +3,8 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { terminalCommands } from "@/data/terminal";
+import { projects } from "@/data/projects";
+import { skillCategories } from "@/data/skills";
 import { X, Minus, Square } from "lucide-react";
 
 interface TerminalLine {
@@ -22,7 +24,7 @@ export default function TerminalMode({ isOpen, onClose }: TerminalModeProps) {
         {
             type: "system",
             content:
-                "Welcome to Aditi Borkar's Terminal v2.0.27\nType 'help' for available commands.\n",
+                "Welcome to Aditi Borkar's Terminal v3.1.2\nSystem initialized. Type 'help' for available commands.\n",
         },
     ]);
     const [currentInput, setCurrentInput] = useState("");
@@ -43,9 +45,28 @@ export default function TerminalMode({ isOpen, onClose }: TerminalModeProps) {
         }
     }, [lines]);
 
+    const formatOutputLines = (text: string, width: number = 60) => {
+        const words = text.split(" ");
+        const lines: string[] = [];
+        let currentLine = "";
+
+        words.forEach(word => {
+            if ((currentLine + word).length > width) {
+                lines.push(currentLine.trim());
+                currentLine = word + " ";
+            } else {
+                currentLine += word + " ";
+            }
+        });
+        lines.push(currentLine.trim());
+        return lines;
+    };
+
     const handleCommand = useCallback(
         (cmd: string) => {
             const trimmed = cmd.trim().toLowerCase();
+            const args = trimmed.split(" ");
+            const command = args[0];
 
             if (!trimmed) return;
 
@@ -57,7 +78,7 @@ export default function TerminalMode({ isOpen, onClose }: TerminalModeProps) {
             setCommandHistory((prev) => [...prev, trimmed]);
             setHistoryIndex(-1);
 
-            if (trimmed === "clear") {
+            if (command === "clear") {
                 setLines([
                     {
                         type: "system",
@@ -68,7 +89,81 @@ export default function TerminalMode({ isOpen, onClose }: TerminalModeProps) {
                 return;
             }
 
-            if (trimmed === "github") {
+            if (command === "help") {
+                newLines.push({
+                    type: "output",
+                    content: `+-- AVAILABLE COMMANDS ----------------------------------------+
+|                                                              |
+| whoami          - Display identity information               |
+| projects        - List all projects with IDs                 |
+| view <id>       - View deep specs of a project               |
+| skills          - Display full technology ecosystem          |
+| certifications  - List verified credentials                  |
+| github          - Open GitHub profile                        |
+| contact         - Display contact information                |
+| help            - Show this help message                     |
+| clear           - Clear terminal                             |
++--------------------------------------------------------------+`,
+                });
+            } else if (command === "skills") {
+                let output = "+-- TECHNOLOGY ECOSYSTEM --------------------------------------+\n";
+                skillCategories.forEach(cat => {
+                    output += `|                                                              |\n`;
+                    output += `| [ ${cat.title.toUpperCase()} ]\n`;
+                    const skillsText = cat.skills.map(s => s.name).join(", ");
+                    const wrapped = formatOutputLines(skillsText, 58);
+                    wrapped.forEach(line => {
+                        output += `| ${line.padEnd(60)} |\n`;
+                    });
+                });
+                output += "|                                                              |\n";
+                output += "+--------------------------------------------------------------+";
+                newLines.push({ type: "output", content: output });
+            } else if (command === "projects" || command === "ls") {
+                let output = "+-- PROJECT INDEX ---------------------------------------------+\n";
+                output += "| Use 'view <id>' to explore system specifications             |\n";
+                output += "| ------------------------------------------------------------ |\n";
+                projects.forEach(p => {
+                    output += `| [${p.id}]`.padEnd(25) + `| ${p.title}\n`;
+                    output += `| -> ${p.codename} | ${p.status.toUpperCase()}\n|\n`;
+                });
+                output += "+--------------------------------------------------------------+";
+                newLines.push({ type: "output", content: output });
+            } else if (command === "view" || command === "cat") {
+                const id = args[1];
+                if (!id) {
+                    newLines.push({ type: "output", content: "Usage: view <project-id>\nExample: view forensic-lens-v2" });
+                } else {
+                    const project = projects.find(p => p.id === id || p.codename.toLowerCase() === id.toLowerCase());
+                    if (project) {
+                        let output = `+-- SYSTEM SPEC: ${project.title.toUpperCase()} --+\n`;
+                        output += `| Codename: ${project.codename.padEnd(48)} |\n`;
+                        output += `| Status: ${project.status.toUpperCase().padEnd(50)} |\n`;
+                        output += `| Class: ${project.classification.toUpperCase().padEnd(51)} |\n`;
+                        output += `| ------------------------------------------------------------ |\n`;
+
+                        output += `| PROBLEM DEFINITION:\n`;
+                        formatOutputLines(project.problem, 58).forEach(l => output += `| ${l.padEnd(60)} |\n`);
+                        output += `|                                                              |\n`;
+
+                        output += `| SYSTEM DESIGN:\n`;
+                        formatOutputLines(project.systemDesign, 58).forEach(l => output += `| ${l.padEnd(60)} |\n`);
+                        output += `|                                                              |\n`;
+
+                        output += `| ARCHITECTURE:\n`;
+                        formatOutputLines(project.architecture, 58).forEach(l => output += `| ${l.padEnd(60)} |\n`);
+                        output += `|                                                              |\n`;
+
+                        output += `| TOOLS: ${project.tools.join(", ")}\n`;
+                        if (project.liveUrl) output += `| DEPLOYED AT: ${project.liveUrl}\n`;
+                        if (project.githubUrl) output += `| REPOSITORY: ${project.githubUrl}\n`;
+                        output += "+--------------------------------------------------------------+";
+                        newLines.push({ type: "output", content: output });
+                    } else {
+                        newLines.push({ type: "output", content: `System Error: Node '${id}' not found in registry.` });
+                    }
+                }
+            } else if (trimmed === "github") {
                 newLines.push({
                     type: "output",
                     content: terminalCommands.github.output,
@@ -82,7 +177,7 @@ export default function TerminalMode({ isOpen, onClose }: TerminalModeProps) {
             } else {
                 newLines.push({
                     type: "output",
-                    content: `Command not found: '${cmd}'\nType 'help' for available commands.`,
+                    content: `Command not found: '${trimmed}'\nType 'help' for available commands.`,
                 });
             }
 

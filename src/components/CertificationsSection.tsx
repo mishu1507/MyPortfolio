@@ -128,7 +128,8 @@ export default function CertificationsSection() {
                                         if (cert.verifyUrl) {
                                             window.open(cert.verifyUrl, "_blank");
                                         } else {
-                                            window.open(`/Certificates/${cert.fileName}`, "_blank");
+                                            const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+                                            window.open(`${basePath}/Certificates/${cert.fileName}`, "_blank");
                                         }
                                     }}
                                 >
@@ -190,7 +191,8 @@ export default function CertificationsSection() {
                                             if (cert.verifyUrl) {
                                                 window.open(cert.verifyUrl, "_blank");
                                             } else {
-                                                window.open(`/Certificates/${cert.fileName}`, "_blank");
+                                                const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+                                                window.open(`${basePath}/Certificates/${cert.fileName}`, "_blank");
                                             }
                                         }}
                                     >

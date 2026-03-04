@@ -46,9 +46,9 @@ export default function CertificationsSection() {
         "aws-cloud-practitioner",
         "ibm-qradar-siem",
         "cisco-network-defense",
-        "cpps",
-        "qh-incident-response",
-        "ai-engineer"
+        "ibm-vulnerability-management",
+        "qh-digital-forensics",
+        "ibm-enterprise-security"
     ];
 
     const filteredCerts = certifications.filter(
